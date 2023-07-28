@@ -1,0 +1,58 @@
+
+
+.navbar {
+  color: wheat;
+  background-color: rgb(47, 47, 47);
+  border: none;
+  padding: 10px; 
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.form-inline .input {
+  width: 100%; 
+}
+
+.form-inline .btn {
+  height: 40px;
+  background-color: rgb(144, 144, 144);
+  color: black;
+  width: 100%; 
+  max-width: 100px; 
+  white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+  .form-inline {
+    justify-content: flex-start; 
+  }
+
+  .form-inline .btn {
+    max-width: none; 
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Apply styles for screens with a width less than or equal to 576px (extra small screens) */
+@media (max-width: 576px) {
+  .icons {
+    display: none; /* Hide the icons stack on extra small screens */
+  }
+}
